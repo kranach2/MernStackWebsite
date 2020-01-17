@@ -21,7 +21,7 @@ const Rmenu = (props) => {
           </Link>
         </li>
         <li>
-          <Link onClick={props.handleClick} className={styles.link} to="/blog">
+          <Link onClick={props.handleClick} className={styles.link} to="/blogs">
             Blog
           </Link>
         </li>

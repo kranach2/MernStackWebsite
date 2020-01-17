@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+ 
+:local(.wrapper){
+    width:100%;
+  }
+  
+  :local(.container){
+    margin-top:6vh; 
+    height:100vh;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 20px;
+    background-color: #b2bec3;
+  }
+
+  :local(.blog_one),
+  :local(.blog_two)
+  {
+      margin-top: 60px;
+      margin-left: 10px;
+      border:1px solid black;
+      height: 300px;
+      text-align: center;
+      padding-top:120px;
+      font-size: 22px;
+      box-shadow: 5px 5px 5px 5px grey;
+      cursor:pointer;
+      background-image: linear-gradient(rgba(99, 110, 114, 0.7), rgba(45, 52, 54, 0.8), rgba(178, 190, 195, 0.5)), url("../images/nature.jpg");
+background-size: cover;
+filter: grayscale(30%);
+  }
+
+  :local(.link) {
+    padding-right: 10px;
+   padding-left: 10px;
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  .link:hover{
+    color: rgb(255, 128, 0);
+    font-weight: bold;
+  }
+  
+  
+  @media (max-width: 1000px){
+  
+    
+  }
+  
+  @media (max-width: 800px){
+    
+    :local(.container){
+
+        grid-template-columns: 45% 45%;
+        grid-column-gap: 10px;
+        
+      }
+    
+      :local(.blog_one),
+      :local(.blog_two)
+      {
+          margin-top: 50px;
+          margin-left: 10px;
+          border:1px solid black;
+      }
+    
+      :local(.link) {
+        font-size: 20px;
+      }
+
+  }
+
+  @media (max-width: 600px){
+
+    :local(.container){
+
+        grid-template-columns: 90%;
+        grid-column-gap: 10px;
+        
+      }
+    
+      :local(.blog_one),
+      :local(.blog_two)
+      {
+          margin-top: 50px;
+          border:1px solid black;
+      }
+    
+      :local(.link) {
+        font-size: 18px;
+      }
+
+  :local(.blog_two){
+      margin-bottom: 100px;
+  }
+      }

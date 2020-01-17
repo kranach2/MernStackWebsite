@@ -5,7 +5,9 @@ import Navbar from "./Navbar";
 import Rmenu from "./Rmenu";
 import Home from "./Home";
 import About from "./About";
-import Blog from "./Blog";
+import Blogs from "./Blogs";
+import BlogOne from "./BlogOne";
+import BlogTwo from "./BlogTwo";
 import Resume from "./Resume";
 import Contact from "./Contact";
 import TermsOfService from "./TermsOfService";
@@ -44,7 +46,9 @@ if(change){
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
-          <Route path="/blog" component={Blog} />
+          <Route path="/blogs" component={Blogs} />
+         <Route path="/blog-arrow-function" component={BlogOne} />
+         <Route path="/blog-generate-random-color-with-javascript" component={BlogTwo} />
           <Route path="/resume" component={Resume} />
           <Route path="/contact" component={Contact} />
           <Route path="/terms-of-service" component={TermsOfService} />

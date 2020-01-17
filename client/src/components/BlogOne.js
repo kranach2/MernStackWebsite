@@ -4,9 +4,9 @@ import axios from "axios";
 import moment from "moment";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
-import styles from "../css/Blog.module.css";
+import styles from "../css/BlogOne.module.css";
 
-const Blog = () => {
+const BlogOne = () => {
 const [comment, setcomment] = useState([]);
 
   useEffect(() => {
@@ -98,4 +98,4 @@ const [comment, setcomment] = useState([]);
   );
 };
 
-export default Blog;
+export default BlogOne;
