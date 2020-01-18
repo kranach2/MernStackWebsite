@@ -19,6 +19,7 @@ background-size: cover;
 
 :local(.paragraphs){
     margin-top: 10px;
+    margin-bottom: 100px;
 }
 
 :local(.para){
