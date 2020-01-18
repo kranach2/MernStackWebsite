@@ -18,7 +18,12 @@ const [comment, setcomment] = useState([]);
       .catch(error => {
         console.log(error);
       });
-  });
+  }, []);
+
+  let filterComment= comment.filter(com =>{
+    return com.blogId === "1";
+  })
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
@@ -65,7 +70,7 @@ const [comment, setcomment] = useState([]);
             </tr>
           </thead>
 
-          {comment.map(comments => {
+          {filterComment.map(comments => {
             return (
               <tbody key={comments._id}>
                 <tr>

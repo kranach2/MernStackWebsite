@@ -14,6 +14,8 @@ import TermsOfService from "./TermsOfService";
 import PrivacyPolicy from "./PrivacyPolicy";
 import Register from "./Register";
 import Login from "./Login";
+import Login1 from "./Login1";
+
 // const Home = lazy( () => import("./Home"));
  //const About = lazy( () => import("./About"));
 // const Blog = lazy( () => import("./Blog"));
@@ -30,7 +32,7 @@ function App() {
   const [change, setchange] = useState(false);
   const handleClick = ()=>{
     setchange(!change);
-    console.log(!change);
+    
     }
 let rmenu; 
 
@@ -55,6 +57,7 @@ if(change){
           <Route path="/privacy-policy" component={PrivacyPolicy} />
           <Route path="/register" component={Register} />
           <Route path="/login" component={Login} />
+          <Route path="/login1" component={Login1} />
         </Switch>
         </ScrollToTop>
         

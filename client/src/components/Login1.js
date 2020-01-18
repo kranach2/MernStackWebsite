@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import styles from "../css/Login.module.css";
 import Footer from "./Footer";
 import axios from "axios";
-const Login = (props) => {
+const Login1 = () => {
   
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
@@ -77,7 +77,7 @@ setLogin(true);
     let token =  store.token;
     let name = store.name 
     const comments = {
-      blogId:"1",
+      blogId:"2",
       comment: comment,
       name:name
     };
@@ -207,4 +207,4 @@ setLogin(true);
     
   );
 };
-export default Login;
+export default Login1;

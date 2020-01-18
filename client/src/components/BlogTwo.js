@@ -4,23 +4,29 @@ import axios from "axios";
 import moment from "moment";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
-import styles from "../css/BlogTwo.module.css";
+import styles from "../css/BlogOne.module.css";
 import htmlCode from "../images/html.jpg";
 import cssCode from "../images/css.jpg";
 import jsCode from "../images/js.jpg";
-const BlogOne = () => {
+
+const BlogTwo = () => {
     const [comment, setcomment] = useState([]);
 
-    useEffect(() => {
-        axios
-            .get("comments")
-            .then(response => {
-                setcomment(response.data);
-            })
-            .catch(error => {
-                console.log(error);
-            });
-    });
+  useEffect(() => {
+    axios
+      .get("comments")
+      .then(response => {
+        setcomment(response.data);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }, []);
+
+     let filterComment= comment.filter(com =>{
+        return com.blogId === "2";
+      })
+    
     return (
         <div className={styles.wrapper}>
             <div className={styles.container}>
@@ -37,19 +43,20 @@ const BlogOne = () => {
                         Step 1: Create a index.html. 
             <br />
             index.html file has parent div with child, div and button.  The codes are given below.
-
-                    <div>
+            </p>
+                    <div className={styles.img_div}>
                         <img className={styles.blog_img} src={htmlCode} alt="HTML Code" />
                         
                     </div>
-                    </p>
+                   
                     <p className={styles.para}>
                     Step 2: Create index.css file.
                     <br/> In this file, we will use css property to style the elements of index.html. The codes are given below.
-                        <div>
+                    </p>
+                        <div className={styles.img_div}>
                             <img className={styles.blog_img} src={cssCode} alt="CSS Code" />
                         </div>
-                    </p>
+                    
                     <p className={styles.para}>
                     Step 3: Create index.js file. <br/>
                     We are going to use HTML DOM to manipulate the elements. 
@@ -58,10 +65,12 @@ const BlogOne = () => {
                     Finally, we have variable name total to get total value. <br/>We are using "setInterval" method because when user clicks the button, the div element will be filled with random background color after every one second. We are using one second to see the result quicker but can be set any timeframe. Then, we are using for loop. In for loop, we are using "Math.random and Math.floor" in order to get random value and round that value downward to its nearest integer. 
                 In order to get six values with "#". We have looped six times. The inner loops work first and repeats until it satisfies the condition. Then,  outer loop just above the inner loop works until the condition is true. Then moves to its outer loop and this way, code continues to execute until it reaches the topmost outer loop. As we have used "setInterval" method, the process never ends. To end the infinite execution, "clearInterval" method can be used. But in this tutorial, it has been used.
                      The code are given below.
-                        <div>
+                     </p>
+                        <div className={styles.img_div}>
                             <img className={styles.blog_img} src={jsCode} alt="JS Code" />
                         </div>
                         <br/><br/>
+                        <p className={styles.para}>
                         It's done. Please comment below if you have any queries. cheers!
                     </p>
                 </div>
@@ -74,19 +83,21 @@ const BlogOne = () => {
                         <tr>
                             <th className={styles.table_header}>Comments</th>
                         </tr>
+                        
                     </thead>
 
-                    {comment.map(comments => {
+                    {filterComment.map(comments => {
                         return (
                             <tbody key={comments._id}>
                                 <tr>
+                                    
                                     <td className={styles.table_data}>  {comments.comment}
                                         <br />
                                         <span className={styles.span}>-commented by: {comments.name}</span> &nbsp;
                   <span className={styles.span}>on: {moment(comments.commentDate.slice(0, 10)).format("DD/MM/YY")}</span>
 
                                     </td>
-
+                                   
                                 </tr>
                             </tbody>
                         );
@@ -99,7 +110,7 @@ const BlogOne = () => {
                     Register
         </Link>{" "}
                 or &nbsp;
-        <Link className={styles.link_two} to="/login">
+        <Link className={styles.link_two} to="/login1">
                     Log In
         </Link>
             </div>
@@ -109,4 +120,4 @@ const BlogOne = () => {
     );
 };
 
-export default BlogOne;
+export default BlogTwo;
