@@ -105,19 +105,25 @@ setLogin(true);
       
       const user = {
         email: email,
-        password: password,
+        password: password
         
       };
     
-
-      axios.post("userauthentication", user).then(res => { 
-        
+    
+     
+    
+      axios.post("userauthentication", user)
+      .then(res => { 
+        console.log(res.data);
         localStorage.setItem("login", JSON.stringify({
           login:true,
           token:res.data.token,
           name: `${res.data.user.firstname} ${res.data.user.lastname}`
           
-        }));        
+        }))
+        .catch((err)=>{
+          console.log(err + "No credential");
+        })
         setmessage("You are Loggedin!");
         setemailError("");
         setpasswordError("");        
@@ -168,7 +174,8 @@ setLogin(true);
               <div>
                 <button className={styles.login_button} type="submit">Log In</button>
               </div>
-              <div className={styles.message}>{message}</div>
+              <div className={styles.message}>{message} </div>
+            
             </form>
           </div>
         </div>

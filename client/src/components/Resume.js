@@ -20,42 +20,6 @@ const Resume = () => {
         </div>
 
         <div className={styles.text}>
-          <h1 className={styles.heading}>Technical Skills</h1>
-          <div className={styles.all_list}>
-            <div className={styles.list_one}>
-              <ul>
-                <li className={styles.list_one_element}>HTML5/CSS3</li>
-                <li className={styles.list_one_element}>JavaScript(ES6)</li>
-                <li className={styles.list_one_element}>React</li>
-                <li className={styles.list_one_element}>Redux</li>
-                <li className={styles.list_one_element}>Node</li>
-                <li className={styles.list_one_element}>SQL(MySQL)</li>
-                <li className={styles.list_one_element}>MongoDB</li>
-                <li className={styles.list_one_element}>Express</li>
-                <li className={styles.list_one_element}>PHP/WordPress</li>
-                <li className={styles.list_one_element}>xml/XSLT/XHTML</li>
-                <li className={styles.list_one_element}>JSON</li>
-              </ul>
-            </div>
-            <div className={styles.list_two}>
-              <ul>
-                <li className={styles.list_two_element}>CRUD Operations</li>
-                <li className={styles.list_two_element}>REST API</li>
-                <li className={styles.list_two_element}>Axios/Fetch</li>
-                <li className={styles.list_two_element}>Bootstrap</li>
-                <li className={styles.list_two_element}>Project Management</li>
-                <li className={styles.list_two_element}>Version Control ( GIT )</li>
-                <li className={styles.list_two_element}>Microsoft Visual Studio </li>
-                <li className={styles.list_two_element}>MERN Stack app deployment</li>
-                <li className={styles.list_two_element}>Responsive Layout and Design</li>
-                <li className={styles.list_two_element}>Cross-Browser Compatibility</li>
-                <li className={styles.list_two_element}>Exposure to Java and C++</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.text}>
           <h1 className={styles.heading}>Technical Summary</h1>
           <p className={styles.para}>
             <i className="fas fa-list fa-xs "></i> Experience with HTML and CSS3 for design and layout.
@@ -75,7 +39,7 @@ const Resume = () => {
           </p>
           <p className={styles.para}>
             <i className="fas fa-list fa-xs "></i> Good command of structured query
-            language for storing, manipulating and retrieving data in databases
+            language (MySQL)  for storing, manipulating and retrieving data in databases
             (Select, Insert, Update, Delete, Join) and so on
           </p>
           <p className={styles.para}>
@@ -98,9 +62,10 @@ const Resume = () => {
           </p>
 
           <p className={styles.para}>
-            <i className="fas fa-list fa-xs "></i> Get, Put, Post, Delete operations on server side.
+            <i className="fas fa-list fa-xs "></i> AJAX for requesting data from web server using XMLHttpRequest.
           </p>
-            
+          <p className={styles.para}>
+            <i className="fas fa-list fa-xs "></i> Sound knowledge of Axios/Fetch to perform HTTP request for retrieving, posting, deleting and modifying data from APIs.</p>
           <p className={styles.para}>
             <i className="fas fa-list fa-xs "></i> Good insight of Version Control-
             Git (through command line and VS code)
@@ -113,11 +78,15 @@ const Resume = () => {
             <i className="fas fa-list fa-xs "></i> Ability to create web applications with clean and maintainable code.
           </p>
           <p className={styles.para}>
-            <i className="fas fa-list fa-xs "></i>	Better understanding UI/UX design principles.
+            <i className="fas fa-list fa-xs "></i>	Knowledge of Responsive web design (through media queries in CSS and Bootstrap) along with cross-browser compatibility.
           </p>
           <p className={styles.para}>
             <i className="fas fa-list fa-xs "></i>	Passion to create innovative and creative projects.
           </p>
+          <p className={styles.para}>
+            <i className="fas fa-list fa-xs "></i>
+          	Better understanding of UI/UX design principles to enhance user experience. 
+            </p>
         </div>
 
         <div className={styles.text}>
@@ -272,20 +241,6 @@ const Resume = () => {
             assistance as necessary.
           </p>
         </div>
-        <div className={styles.text}>
-          <h1 className={styles.heading}>Achievement</h1>
-
-          <p className={styles.para}>
-            
-            <i className="fas fa-list fa-xs "></i> Outstanding performance in the
-            undergraduate course with distinction (course average of more than
-            70%)
-          </p>
-          <p className={styles.para}>
-            <i className="fas fa-list fa-xs"></i> Scored overall of 87 out of 90 in
-            English Test (PTE Academic)
-          </p>
-        </div>
 
         <div className={styles.text}>
           <h1 className={styles.heading}>Professional Development</h1>
@@ -302,25 +257,6 @@ const Resume = () => {
           </p>
         </div>
 
-        <div className={styles.text}>
-          <h1 className={styles.heading}>Awards</h1>
-          <p className={styles.para}>
-            <i className="fas fa-list fa-xs"></i> Invited to participate in an
-            Honours program (Bachelor's of Information Technology Honours)
-          </p>
-          <p></p>
-        </div>
-
-        <div className={styles.text}>
-          <h1 className={styles.heading}>Professional Membership</h1>
-          <p className={styles.para}>
-            <i className="fas fa-list fa-xs"></i> Australian Computer Society (ACS)
-          </p>
-          <p className={styles.para}>
-            
-            <i className="fas fa-list fa-xs"></i> Member of freeCodeCamp.org
-          </p>
-        </div>
         <div className={styles.text}>
           <h1 className={styles.heading}>Education</h1>
 
@@ -344,32 +280,6 @@ const Resume = () => {
           </i>
         </div>
 
-        <div className={styles.text}>
-          <h1 className={styles.heading}>Hobbies and Interests</h1>
-          <p className={styles.para}>
-            <i className="fas fa-list fa-xs"></i> Love to read novels (Digital
-            Fortress by Dan Brown, is one of my favourites)
-          </p>
-          <p className={styles.para}>
-            <i className="fas fa-list fa-xs"></i> Travelling 
-          </p>
-          <p className={styles.para}>
-            <i className="fas fa-list fa-xs"></i> Cycling 
-          </p>
-          <p className={styles.para}>
-            <i className="fas fa-list fa-xs"></i> Videos games 
-          </p>
-        </div>
-
-        <div className={styles.text}>
-          <h1 className={styles.heading}>Additional Information</h1>
-          <p className={styles.para}>
-            <i className="fas fa-list fa-xs"></i> Permanent Resident
-          </p>
-          <p className={styles.para}>
-            <i className="fas fa-list fa-xs"></i> Full Time Availability
-          </p>
-        </div>
       </div>
       <Footer />
     </div>

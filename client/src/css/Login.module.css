@@ -140,7 +140,7 @@ text-shadow: -2px 2px 1px#222f3e;
       font-family: 'Orbitron', sans-serif;
       color:black;
       animation-name: message;
-      animation-duration: 5s;
+      animation-duration: 7s;
       animation-timing-function: linear;
       animation-delay: 0s;
       animation-iteration-count: 1;
@@ -148,6 +148,7 @@ text-shadow: -2px 2px 1px#222f3e;
     
     @keyframes message {
       0% {
+        color:#4834d4;
         visibility: visible;
         opacity: 1;
         transform: scale(1);
