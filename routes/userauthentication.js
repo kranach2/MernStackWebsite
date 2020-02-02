@@ -8,12 +8,15 @@ const authentication=require("../middleware/authentication")
 
 //Post user authentication
 //Authenticate  user
-router.route("/").post((req, res) => {
+router.route("/" ).post((req, res) => {
 const {email, password} = req.body;
 //validation
 if(!email || !password){
+ 
   return res.status(400).json({msg:"please enter all fields"});
+  
 }
+
   //Check for existing user
   User.findOne({ email })
   .then(user =>{
@@ -22,7 +25,7 @@ if(!email || !password){
     //validate password
     bcrypt.compare(password, user.password)
     .then(isMatch =>{
-        if(!isMatch) return res.status(400).json({msg: "Invalid credentials"});
+        if(!isMatch) return res.status(400).json({msg: "Wrong Password"});
 
         jwt.sign(
             { id:user.id },

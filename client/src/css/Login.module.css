@@ -59,7 +59,9 @@ text-shadow: -2px 2px 1px#222f3e;
       letter-spacing: 2px;
       color:black;
   }
-
+:local(.login_button_div){
+  margin-top: 40px;
+}
   :local(.login_button){
       width:calc(100% - 160px);
       height:30px;
@@ -71,8 +73,8 @@ text-shadow: -2px 2px 1px#222f3e;
       font-size: 15px;
   }
   
-  :local(.email_error),
-  :local(.password_error)
+  
+  :local(.error)
   {
     margin-left: 90px;
     color:rgba(214, 48, 49,1.0);

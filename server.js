@@ -4,6 +4,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 require("dotenv").config();
 const path= require("path");
+app.use(express.urlencoded({ extended: false }))
 const usersRouter = require("./routes/users");
 const userauthenticationRouter = require("./routes/userauthentication");
 const commentsRouter = require("./routes/comments")

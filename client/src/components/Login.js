@@ -3,16 +3,15 @@ import { useState, useEffect } from "react";
 import styles from "../css/Login.module.css";
 import Footer from "./Footer";
 import axios from "axios";
-const Login = (props) => {
+const Login = () => {
   
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
-  const [emailError, setemailError] = useState("");
-  const [passwordError, setpasswordError] = useState("");
   const [message, setmessage] = useState(null);
   const [login, setLogin] = useState(false);
   const [store, setStore] = useState(null);
   const [comment, setcomment] = useState("Add comments....");
+  const[error, seterror]=useState(false);
   
   useEffect(() => {
     storeCollector()
@@ -42,36 +41,16 @@ setLogin(true);
     return setpassword(e.target.value);
   };
   const handleEmailKey = () => {
-    return setemailError("");
+    return seterror("");
   };
   const handlePasswordKey = () => {
-    return setpasswordError("");
+    return seterror("");
   };
   
   const handleComment = (e) =>{
     setcomment(e.target.value);
 }
-  const validate = () => {
   
-    const emailCheck = /^[A_Za-z]{3,}@[A-Za-z]{3,}[.]{1}[AZa-z.]{2,6}/;
-
-    if (email === "") { 
-      setemailError("Please fill the field");
-    }
-    else if (!emailCheck.test(email)) {
-     
-     setemailError("** Invalid email address");
-   } 
-
-   else{
-  return emailError;
- }
-
-    if (password === "") {
- 
-      setpasswordError("Please fill the field");
-    }
-  };
   const handleSubmitComment = e => {
     e.preventDefault();
     let token =  store.token;
@@ -95,45 +74,40 @@ setLogin(true);
       
     });
   
-
   }
-  const handleSubmit = e => {
-    e.preventDefault();
 
-    validate();
-    
+  const handleSubmit = e => {
+    e.preventDefault();   
       
       const user = {
         email: email,
         password: password
         
       };
-    
-    
-     
-    
+  
       axios.post("userauthentication", user)
       .then(res => { 
-        console.log(res.data);
         localStorage.setItem("login", JSON.stringify({
           login:true,
           token:res.data.token,
           name: `${res.data.user.firstname} ${res.data.user.lastname}`
           
         }))
-        .catch((err)=>{
-          console.log(err + "No credential");
-        })
         setmessage("You are Loggedin!");
-        setemailError("");
-        setpasswordError("");        
+        seterror("");        
         setpassword("");
         setemail("");
-        storeCollector()
-      });
+        storeCollector();
+        })
+        .catch(err=>{
+          if(err.response){
+            return seterror(err.response.data.msg);
+        }})
+        
+      }
     
     
-  };
+  
 
   return (
     <div className={styles.wrapper}>
@@ -154,7 +128,6 @@ setLogin(true);
                   value={email}
                   placeholder="Email &#42;"
                 />
-                 <span className={styles.email_error}>{emailError}</span>
               </div>
               <br />
               <div className={styles.password_div}>
@@ -167,15 +140,15 @@ setLogin(true);
                   name="password"
                   placeholder="Password &#42;"
                 />
-                 <span className={styles.password_error}>{passwordError}</span>
               </div>
-              <br />
-
-              <div>
+              <div className={styles.message_span}>
+      <span className={styles.message}>{message}</span>
+      </div>
+              <div className={styles.error}>{error}</div>
+              <div className={styles.login_button_div}>
                 <button className={styles.login_button} type="submit">Log In</button>
               </div>
-              <div className={styles.message}>{message} </div>
-            
+      
             </form>
           </div>
         </div>
