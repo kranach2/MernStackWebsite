@@ -1,38 +1,39 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import styles from "../css/Rmenu.module.css";
+import  "../css/Rmenu.css";
 
 const Rmenu = (props) => {
+
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.container}>
+    <div className="wrapper">
+      <div className="container">
           
-          <div className={styles.rmenu}>
+          <div className="rmenu">
       <ul>
         <li>
-          <Link onClick={props.handleClick} className={styles.link} to="/">
+          <Link onClick={props.handleClick} className="link" to="/">
             Home
           </Link>
         </li>
         <li>
-          <Link onClick={props.handleClick} className={styles.link} to="/about">
+          <Link onClick={props.handleClick} className="link" to="/about">
             About
           </Link>
         </li>
         <li>
-          <Link onClick={props.handleClick} className={styles.link} to="/blogs">
+          <Link onClick={props.handleClick} className="link" to="/blogs">
             Blog
           </Link>
         </li>
         <li>
-          <Link onClick={props.handleClick} className={styles.link} to="/resume">
+          <Link onClick={props.handleClick} className="link" to="/resume">
             Resume
           </Link>
         </li>
         
         <li>
-          <Link onClick={props.handleClick} className={styles.link} to="/contact">
+          <Link onClick={props.handleClick} className="link" to="/contact">
             Contact
           </Link>
         </li>

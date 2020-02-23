@@ -271,14 +271,14 @@ filter: grayscale(50%);
     :local(.list_one_element){
     width:100%;
       padding:2px;
-      font-size: 16px;
+      font-size: 17px;
     }
         
     :local(.list_two_element){
       width:100%;
       margin-left: 30px;
       padding:2px;
-      font-size: 16px;
+      font-size: 17px;
     }
 }
 

@@ -1,7 +1,8 @@
 import React from "react";
 import { Link} from "react-router-dom";
 import styles from "../css/Navbar.module.css";
-import pic from "../images/logo.png";
+//import pic from "../images/logo.png";
+import Logo from "../components/Logo";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 const Navbar = (props) => {
   return (
@@ -9,7 +10,7 @@ const Navbar = (props) => {
     <div className={styles.navbar}>
         <div>
       <Link to="/">
-        <img className={styles.logo} src={pic} alt="logo" />
+       <Logo />
       </Link>
       </div>
       <div className={styles.menu}>
@@ -40,8 +41,8 @@ const Navbar = (props) => {
           </Link>
         </li>
         <li>  
-          <Link onClick={props.handleClick} to = "#">
-          <i className="fas fa-bars "></i>
+          <Link className={styles.iconLink} onClick={props.handleClick} to = "#">
+          <i className="fas fa-bars"></i>
           </Link>
         </li>
       </ul>

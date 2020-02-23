@@ -49,22 +49,22 @@ font-size: 50px;
         margin-top:20px;
         margin-bottom: 50px;
         text-align: center;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     :local(.email){
         
-        font-size: 15px;
+        font-size: 16px;
     }
 
     :local(.phone){
         margin-right:45px;
-        font-size: 15px;
+        font-size: 16px;
     }
 
 :local(.place){
     margin-right:38px;
-    font-size: 15px;
+    font-size: 16px;
 }
 
     :local(.social_icon){

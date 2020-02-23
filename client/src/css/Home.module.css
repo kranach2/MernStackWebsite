@@ -225,7 +225,7 @@
 }
 
 :local(.para_two) {
-  font-size: 17px;
+  font-size: 18px;
   margin-top: 5px;
   line-height: 25px;
   letter-spacing: 1px;
@@ -280,7 +280,7 @@
   margin-top: 5px;
   line-height: 25px;
   letter-spacing: 1px;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 :local(.mid_heading) {
@@ -289,23 +289,23 @@
 }
 
 :local(.mid_para) {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: 100px;
   margin-right: 100px;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
   letter-spacing: 1px;
 }
 
 :local(.button) {
-  margin-top: 50px;
+  margin-top: 80px;
   width: 200px;
   height: 60px;
   border-radius: 50px;
   padding: 10px;
   background-color: #576574;
-  font-size: 20px;
+  font-size: 18px;
   transition: all 2s linear;
 }
 
@@ -357,7 +357,7 @@ margin-left: 10px;
 }
 
 :local(.para_two) {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
   letter-spacing: 1px;
 }
@@ -402,7 +402,7 @@ margin-left: 10px;
 }
 
 :local(.para_three) {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
   letter-spacing: 1px;
 }
@@ -485,7 +485,7 @@ margin-left: 10px;
   
 }
 :local(.quote_para) {
-  font-size: 21px;
+  font-size: 20px;
 }
 
 :local(.container_two) {

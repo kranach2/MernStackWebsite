@@ -152,7 +152,7 @@ filter: grayscale(50%);
     margin-top: 5px;
     line-height: 25px;
     letter-spacing: 1px;
-    font-size: 17px;
+    font-size: 18px;
   }
 
   @media (max-width: 1000px){
@@ -198,7 +198,7 @@ filter: grayscale(50%);
       }
 
       :local(.para_two) {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 30px;
         letter-spacing: 1px;
       }
@@ -235,7 +235,7 @@ filter: grayscale(50%);
     }
 
   :local(.para_one){
-      font-size: 17px;
+      font-size: 18px;
   }
       :local(.container_two)
        {
@@ -297,7 +297,6 @@ filter: grayscale(50%);
       left:0%;
     }
       :local(.heading_one){
-    
         font-size: 25px;
         }
       :local(.para_one){

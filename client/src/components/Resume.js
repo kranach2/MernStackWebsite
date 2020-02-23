@@ -22,20 +22,19 @@ const Resume = () => {
         <div className={styles.text}>
           <h1 className={styles.heading}>Technical Summary</h1>
           <p className={styles.para}>
-            <i className="fas fa-list fa-xs "></i> Experience with HTML and CSS3 for design and layout.
+            <i className="fas fa-list fa-xs "></i> Experience with HTML and CSS3 including Sass for design and layout.
           </p>
           <p className={styles.para}>
-            <i className="fas fa-list fa-xs "></i>	Sound knowledge of JavaScript (ES6): arrow function, destructuring, spread operator, rest and default parameters, maps, subclasses, import, export, async, await and so on.
+            <i className="fas fa-list fa-xs "></i> Sound knowledge of JavaScript (ES6): arrow function, destructuring, spread operator, rest and default parameters, maps, subclasses, import, export, async, await and so on.
             </p>
           <p className={styles.para}>
             <i className="fas fa-list fa-xs "></i> React - Class component,
             component lifecycle (mounting, updating and unmounting), higher
             order component (HOC), state and setState, React context, Functional
-            component, React hooks (useState, useEffect, useHistory,
-            useLocation, useParams), React router
+            component, React hooks, React router
           </p>
           <p className={styles.para}>
-            <i className="fas fa-list fa-xs "></i> Redux for state management - store, reducer, action, dispatch, Class Component (connect), Functional component (useSelector, useDispatch), redux thunk.
+            <i className="fas fa-list fa-xs "></i> Redux for state management and middleware redux thunk.
           </p>
           <p className={styles.para}>
             <i className="fas fa-list fa-xs "></i> Good command of structured query
@@ -66,8 +65,10 @@ const Resume = () => {
           </p>
           <p className={styles.para}>
             <i className="fas fa-list fa-xs "></i> Sound knowledge of Axios/Fetch to perform HTTP request for retrieving, posting, deleting and modifying data from APIs.</p>
+            <p className={styles.para}>
+            <i className="fas fa-list fa-xs "></i> JSON for exchanging data between server and browser.</p> 
           <p className={styles.para}>
-            <i className="fas fa-list fa-xs "></i> Good insight of Version Control-
+            <i className="fas fa-list fa-xs "></i> Good insight of Code Version Control-
             Git (through command line and VS code)
           </p>
           <p className={styles.para}>
@@ -84,9 +85,12 @@ const Resume = () => {
             <i className="fas fa-list fa-xs "></i>	Passion to create innovative and creative projects.
           </p>
           <p className={styles.para}>
-            <i className="fas fa-list fa-xs "></i>
-          	Better understanding of UI/UX design principles to enhance user experience. 
+            <i className="fas fa-list fa-xs "></i>          	 Better understanding of UI/UX design principles to enhance user experience. 
             </p>
+            <p className={styles.para}>
+            <i className="fas fa-list fa-xs "></i>    Scalable Vector Graphics (SVG) for designing scalable logo and icons.</p>
+            <p className={styles.para}>
+            <i className="fas fa-list fa-xs "></i>    Exposure to JavaScript framework – React Native for building native apps.</p>
         </div>
 
         <div className={styles.text}>
@@ -242,6 +246,18 @@ const Resume = () => {
           </p>
         </div>
 
+        <div className={styles.text}>
+          <h1 className={styles.heading}>Web Projects</h1>
+          <p className={styles.para}>
+            <i className="fas fa-list fa-xs"></i> Personal Website built with MongoDB, Express, React, Node (MERN Stack), HTML and CSS (http://www.iamkishor.info/). <br/>
+            	All the source code can be accessed from GitHub repository - (https://github.com/kranach2/MernStackWebsite).
+          </p>
+          <p className={styles.para}>
+            <i className="fas fa-list fa-xs"></i> Messaging web app powered by React, Express, MongoDB and Socket.io (https://react-chatter-app.herokuapp.com/). <br/>
+	Source code is available in GitHub repository - (https://github.com/kranach2/MessagingWebApp.git)
+          </p>
+        </div>
+    
         <div className={styles.text}>
           <h1 className={styles.heading}>Professional Development</h1>
           <p className={styles.para}>

@@ -20,20 +20,13 @@ const About = () => {
           </h1>
           <p className={styles.para_two}>
             I am originally from Kathmandu, capital of Nepal. To pursue higher
-            education, came to Perth, WA in 2013. In fact, I came to Edith Cowan
-            University to study biomedical science as I had a science background
-            in high school. But I was destined to something else. After few days
-            of arrival, I changed my mind to make my career on IT as I was
-            always interested in computer technology since childhood. I
-            completed Bahelor's of Information Technology from ECU followed by
-            professional year program from National Institute of Technology. I
-            love watching movies and reading novels. My favourite visited place
-            is New York City and favourite dish is MOMO (Nepalese dumpling).
+            education, I came to Perth, WA in 2013. I have done Bahelor's of Information Technology from ECU followed by professional year program from National Institute of Technology. I
+            love watching movies and reading novels. 
             Meditation in the weekend helps me kick start my day followed by
             cycling. Playing video games with friends and learning new topics in
             free time makes me feel good. I love helping people who are in need
-            which I think is the best traits of mine. Last but not least, always
-            ready for long drive.
+            which I think is the best traits of mine. My favourite visited place
+            is New York City.
           </p>
         </div>
         <div className={styles.image_two}>
