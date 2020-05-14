@@ -12,9 +12,9 @@ const firstHeading = useRef();
 const secondHeading = useRef();
 
 useEffect(() => {
-  let tl = gsap.timeline();
-tl.from(firstHeading.current, {duration: 3,ease: "back", x: -1000 , scale: 1.2, skewX: 45, rotation: 180, color:"rgba(26, 188, 156,1.0)"})
-  .from(secondHeading.current, {duration: 3, ease: "back", x: window.innerWidth, scale: 1.2, skewX: 45, rotation: 180, color: "rgba(26, 188, 156,1.0)"})
+  // let tl = gsap.timeline();
+gsap.from(firstHeading.current, {duration: 3,ease:"expo.out", x: -1000 , scale: 1.2, skewX: 60, rotation: 280, color:"rgba(26, 188, 156,1.0)"})
+  gsap.from(secondHeading.current, {duration: 3, ease: "expo.out", x: window.innerWidth, scale: 1.2, skewX: 60, rotation: 280, color: "rgba(26, 188, 156,1.0)", delay:1})
   
 }, [firstHeading, secondHeading])
 
