@@ -1,56 +1,79 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import styles from "../css/Home.module.css"
+import {gsap} from "gsap";
 import Footer from "./Footer";
-import javascript_code from "../images/javascript code.jpg";
-import mernstack from "../images/mernstack.jpeg";
+import styles from "../css/Home.module.css"
+
+
+
 const Home = () => {
+
+const firstHeading = useRef();
+const secondHeading = useRef();
+
+useEffect(() => {
+  let tl = gsap.timeline();
+tl.from(firstHeading.current, {duration: 3,ease: "back", x: -1000 , scale: 1.2, skewX: 45, rotation: 180, color:"rgba(26, 188, 156,1.0)"})
+  .from(secondHeading.current, {duration: 3, ease: "back", x: window.innerWidth, scale: 1.2, skewX: 45, rotation: 180, color: "rgba(26, 188, 156,1.0)"})
   
+}, [firstHeading, secondHeading])
+
+  //.to(".grey", {duration: 1, x: 200, scale: 2, y: 20});
+
     return (
-        <div className={styles.wrapper}>
-       <div className={styles.container_one}>
-      <div className={styles.text_one}>
-        <h1 className={styles.heading_one}> 
-        <span className={styles.heading_span}>Hi</span>
-        <span className={styles.heading_span}>It's me Kishor Rana Chhetri</span> 
-        <span className={styles.heading_span}>Welcome to my website!</span>
-        </h1>
-        </div> 
-        <div className={styles.quote}>
-        <q className={styles.quote_para}>Website without visitors is like a ship lost in the horizon.</q>
-        <i className={styles.italic}> - Dr. Christopher Dayagdag</i>
-        </div>    
-      </div>
-
-      <div className={styles.container_two}>
-      <div className={styles.text_two}>
-        <p className={styles.para_two}>This website aims to introduce myself and showcase my skills, knowledge and experience. Moreover, as we know, sharing is caring, it also contains blog on javascript and its frameworks including both front and backend. I will post blogs on different topics based on my knowledge and experience. I have comment section as well to make it more interactive and readers can express their opinions regarding particular topics.</p>
+      <div className={styles.homeContainer}>
+        
+        <div className={styles.mainContainer}>
+          <div ref={firstHeading} className={styles.firstHeading}>
+        <h1>Kishor Rana Chhetri</h1>
         </div>
-        <div className={styles.image_two}>
-            <img src={javascript_code} alt="JavasScript Code" />
+        <div ref={secondHeading} className={styles.secondHeading}>
+        <h1>Full Stack Developer</h1>
         </div>
-      </div>
+        <div>
 
-<div className={styles.midsection}>
-  <h1 className={styles.mid_heading}>Build Full Stack Website with me</h1>
-  <p className={styles.mid_para}>I can build interactive website that has both frontend and backend. With hands on experience with PHP and wordpress, I have already developed some websites. As there is increasing demand of skilled person in web development, I have prepared myself with the latest technology and tools. Similarly, I now have skills in  MongoDB, Express, React and Node which is in combined called MERN stack. With these skills, I can build full stack interactive website for small businesses to medium businesses. </p>
-   <button className={styles.button}><Link className={styles.link} to="/resume">View my Resume</Link></button>
+        </div>
+        <button className={styles.button}><Link className={styles.link} to="/resume">View my Resume</Link></button>
+        </div>
+       
+       <div className={styles.infoContainer}>
+   <div className={styles.cardContainer}>
+     <div className={styles.content}>
+     <div className={styles.front}>
+About this website
+     </div>
+     <div className={styles.back}>
+     <p>This website aims to introduce myself and showcase my skills, knowledge and experience. Moreover, as we know, sharing is caring, it also contains blog on javascript and its frameworks including both front and backend. I will post blogs on different topics based on my knowledge and experience. I have comment section as well to make it more interactive and readers can express their opinions regarding particular topics.</p>
+     </div>
+     </div>
+   </div>
+   <div className={styles.cardContainer}>
+     <div className={styles.content}>
+     <div className={styles.front}>
+What I can do
+     </div>
+     <div className={styles.back}>
+     <p>I can build interactive website that has both frontend and backend. With hands on experience with PHP and wordpress, I have already developed some websites. As there is increasing demand of skilled person in web development, I have prepared myself with the latest technology and tools. Similarly, I now have skills in  MongoDB, Express, React and Node which is in combined called MERN stack. With these skills, I can build full stack interactive website for small businesses to medium businesses.</p>
+     </div>
+     </div>
+   </div>
+
+   <div className={styles.cardContainer}>
+     <div className={styles.content}>
+     <div className={styles.front}>
+Tools and technologies
+     </div>
+     <div className={styles.back}>
+     <p>Regarding this website, it is developed using HTML, CSS, MongoDB, Express, React and Node. VsCode has been used for scripting.It has followed best practices that we find in modern websites. It is responsive meaning it is mobile and tablet friendly. All the source codes can be accessed from github repository.</p>
+     </div>
+     </div>
+   </div>
+   
 </div>
-
-      <div className={styles.container_three}>
-      <div className={styles.image_three}>
-            <img src={mernstack} alt="Mernstack"/>
-        </div>
-
-      <div className={styles.text_three}>
-        <p className={styles.para_three}>Regarding this website, it is developed using MongoDB, Express, React and Node. I have tried my best to apply best practices that we find in modern websites. It is responsive meaning it is mobile and tablet friendly. All the source codes can be accessed from github repository. </p>
-        </div>
-      </div>
-
-      <Footer />
-
-      </div> 
-    );
+<Footer />
+    </div>
+      
+    )
   };
   export default Home;
   

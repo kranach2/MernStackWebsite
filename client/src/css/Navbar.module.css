@@ -1,165 +1,103 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-
- :local(.parent ){  
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 15vh; 
-  z-index: 9999;
-} 
-
-:local(.navbar) {  
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-between;
-  align-items: center;
-  background-color:rgb(72,72,72);  
-  filter:grayscale(20%);  
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    
 }
 
-:local(.menu ul) {
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: center;
-  align-items: center;
+:local(.mainContainer){
+    position: fixed;
+    top:0;
+    width:100%;
+    height: 10vh;
+    background-image: linear-gradient(rgba(35,39,42, 1.0) 20%, rgba(0, 0, 0, 1.0) 80%); 
+    z-index: 9999;
 }
 
-:local(.menu li):nth-child(n+6) {
-  visibility: hidden;
-  opacity: 0;
-  list-style-type: none;
- 
+:local(.navBar){
+    display:grid;
+     grid-template-columns: 20% 80%;
+     justify-content: space-between;
+     align-items: center;
+     
+
 }
 
-:local(.link) {
-  padding-right: 10px;
- padding-left: 10px;
-  text-decoration: none;
- font-size: 22px;
-  color: rgb(255, 255, 255);
+:local(.menu ul){
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    
 }
+:local(.menu ul li):nth-child(-n+5) {
+    padding-left: 35px;
+    padding-right: 35px;
+    list-style-type: none;
+  }
 
-.link:hover{
-  color:rgb(255, 128, 0);
-  font-weight: bold;
+:local(.menu ul li):nth-child(n+6) {
+   
+    visibility: hidden;
+    opacity: 0;
+    list-style-type: none;
+   
+  }
+:local(.menu ul li){
+   font-size: 16px;
 }
-
-
-
+:local(.link){
+    color:white;
+    text-decoration: none;
+}
 @media (max-width: 1000px){
-  :local(.parent ){
-    height:15vh; 
-  } 
-  
-  :local(.menu ul) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content:center;
-    align-items: center; 
-  }
-
-  :local(.menu li):nth-child(6) {
+  :local(.menu ul li):nth-child(6) {  
     visibility: visible;
     opacity: 1;
     list-style-type: none;
+    padding-right: 20px;
+    font-size: 30px;
+    
   }
 
-  :local(.menu li):nth-child(-n+5) {
+  :local(.menu ul li):nth-child(-n+5) {
     visibility: hidden;
     opacity: 0;
     list-style-type: none;
   }
-  :local(.iconLink) {
-    padding-right: 10px;
-    text-decoration: none;
-    font-size: 22px;
-    color: rgb(255, 255, 255);
-  }
-  .iconLink:hover{
-    color:rgb(255, 128, 0);
-    font-weight: bold;
-  }
-  
 }
 
-@media(max-width: 800px) {
-  :local(.parent ){
-    height:15vh; 
-  } 
-  
-  :local(.menu ul) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content:center;
-    align-items: center; 
-  }
-
-  :local(.menu li):nth-child(6) {
-    
-    visibility: visible;
-    opacity: 1;
-    list-style-type: none;
-  }
-
-  :local(.menu li):nth-child(-n+5) {
-    visibility: hidden;
-    opacity: 0;
-    list-style-type: none;
-  }
-
-  :local(.iconLink) {
-    padding-right: 10px;
-    text-decoration: none;
-    font-size: 22px;
-    color: rgb(255, 255, 255);
-  }
-  .iconLink:hover{
-    color:rgb(255, 128, 0);
-    font-weight: bold;
-  }
-  
-}
-
-@media (max-width: 600px){
-  :local(.parent ){  
-    height:15vh; 
-  } 
-  
-  :local(.menu ul) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content:center;
-    align-items: center;
-    
-  }
-
-  :local(.menu li):nth-child(6) {
+@media (max-width: 800px){
+  :local(.menu ul li):nth-child(6) {  
     visibility: visible;
     opacity: 1;
     list-style-type: none;
     padding-right: 20px;
   }
 
-  :local(.menu li):nth-child(-n+5) {
+  :local(.menu ul li):nth-child(-n+5) {
     visibility: hidden;
     opacity: 0;
     list-style-type: none;
   }
+    
+}
 
-  :local(.iconLink) {
-    padding-right: 10px;
-    text-decoration: none;
-    font-size: 22px;
-    color: rgb(255, 255, 255);
-  }
-  .iconLink:hover{
-    color:rgb(255, 128, 0);
-    font-weight: bold;
-  }
-  
-  
+
+@media (max-width: 600px){  
+    :local(.menu ul li):nth-child(6) {  
+      visibility: visible;
+      opacity: 1;
+      list-style-type: none;
+      padding-right: 20px;
     }
+  
+    :local(.menu ul li):nth-child(-n+5) {
+      visibility: hidden;
+      opacity: 0;
+      list-style-type: none;
+    }
+   
+      }

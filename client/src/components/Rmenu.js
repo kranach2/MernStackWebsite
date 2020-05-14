@@ -1,15 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import  "../css/Rmenu.css";
+import "../css/Rmenu.css";
 
 const Rmenu = (props) => {
-
+let drawerClasses = "rMenuContainer";
+  if(props.show){
+    drawerClasses = "rMenuContainer open"
+  }
+  
   return (
-    <div className="wrapper">
-      <div className="container">
-          
-          <div className="rmenu">
+    <div className={drawerClasses}>
+          <div className="rMenuDiv">
       <ul>
         <li>
           <Link onClick={props.handleClick} className="link" to="/">
@@ -40,7 +42,6 @@ const Rmenu = (props) => {
         </ul>
         </div>
       </div> 
-    </div>
   );
 };
 

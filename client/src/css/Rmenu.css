@@ -1,37 +1,66 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
-  .wrapper{
-    width:100%;
-    height: 100vh;
-  }
-
-.container{
-  z-index: 5;
-position: relative;
-width:100%;
+.rMenuContainer{
+position: fixed;
+z-index: 999999;
+right:0;
 height: 100vh;
-background-image: linear-gradient(to bottom right, rgba(99, 110, 114, 0.7), rgba(45, 52, 54, 0.8), rgba(178, 190, 195, 0.5));
+background-image: linear-gradient(to bottom right, rgb(179, 157, 219), rgb(149, 117, 205), rgb(126, 87, 194), rgb(103, 58, 183), rgb(94, 53, 177), rgb(81, 45, 168), rgb(69, 39, 160), rgb(49, 27, 146));
 background-size: cover;
 filter: grayscale(70%); 
+transform:translateX(100%);
+transition: transform 0.5s ease-out;
+box-shadow:  10px 10px 10px 10px rgba(52, 152, 219,1.0);
 }
 
-.rmenu{
-    position: absolute;
-     width:100%;
-    text-align:center;
+.rMenuContainer.open
+{
+  transform: translateX(0);
+  
 }
 
-.rmenu ul{
-    margin:120px;
+.rMenuContainer.hide
+{
+  visibility: hidden;
+  opacity: 0;
 }
 
-.link {
+.rMenuDiv ul{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+list-style-type: none;
+padding:100px;
+}
+
+.rMenuDiv ul li{
+  padding:25px;
+  }
+
+.link{
     text-decoration: none;
     font-size: 30px;
-    color: rgb(255, 255, 255); 
+    font-weight: bold;
+    color: white; 
   }
   
   .link:hover{
-    color:rgb(255, 128, 0);
-    font-weight: bold;
+    color:rgba(231, 76, 60,1.0);
+    
+  }
+
+
+  @media (max-width: 600px){
+    .rMenuDiv ul{
+      padding:80px;
+      }
+      
+  }
+
+  @media (max-width: 400px){
+    .rMenuDiv ul{
+      padding:50px;
+      }
+
   }

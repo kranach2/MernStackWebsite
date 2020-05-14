@@ -5,7 +5,7 @@
   }
   
   :local(.container){
-    margin-top:6vh; 
+    margin-top:10vh;
     height:100vh;
     display: grid;
     justify-content: center;
@@ -17,9 +17,10 @@
   :local(.blog_one),
   :local(.blog_two)
   {
-      margin-top: 60px;
-      margin-left: 10px;
+      margin-top: 10vh;
+      margin-left: 20px;
       border:1px solid black;
+      border-radius: 5px;
       height: 300px;
       text-align: center;
       padding-top:120px;
@@ -77,8 +78,8 @@ filter: grayscale(30%);
 
     :local(.container){
 
-        grid-template-columns: 90%;
-        grid-column-gap: 10px;
+        grid-template-columns: auto;
+        grid-column-gap: 50px;
         
       }
     
@@ -89,6 +90,7 @@ filter: grayscale(30%);
           border:1px solid black;
       }
     
+      
       :local(.link) {
         font-size: 18px;
       }

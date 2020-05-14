@@ -6,9 +6,9 @@ import Logo from "../components/Logo";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 const Navbar = (props) => {
   return (
-      <div className={styles.parent}>
-    <div className={styles.navbar}>
-        <div>
+      <div className={styles.mainContainer}>
+    <div className={styles.navBar}>
+        <div className={styles.logo}>
       <Link to="/">
        <Logo />
       </Link>
@@ -17,31 +17,31 @@ const Navbar = (props) => {
       <ul>
         <li>
           <Link className={styles.link} to="/">
-            Home
+            HOME
           </Link>
         </li>
         <li>
           <Link className={styles.link} to="/about">
-            About
+            ABOUT
           </Link>
         </li>
         <li>
           <Link className={styles.link} to="/blogs">
-            Blog
+            BLOG
           </Link>
         </li>
         <li>
           <Link className={styles.link} to="/resume">
-            Resume
+            RESUME
           </Link>
         </li>
         <li>
           <Link className={styles.link} to="/contact">
-            Contact
+            CONTACT
           </Link>
         </li>
         <li>  
-          <Link className={styles.iconLink} onClick={props.handleClick} to = "#">
+          <Link className={styles.link} onClick={props.handleClick} to = "#">
           <i className="fas fa-bars"></i>
           </Link>
         </li>

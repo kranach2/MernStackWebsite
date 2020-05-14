@@ -34,16 +34,12 @@ function App() {
     setchange(!change);
     
     }
-let rmenu; 
 
-if(change){
-  rmenu = <Rmenu handleClick={handleClick}/>;
-}
   return (
     <div className="App">
       <Router>
         <Navbar handleClick={handleClick}/>
-        {rmenu}
+        <Rmenu show={change} handleClick={handleClick}/>
         <ScrollToTop> 
         <Switch>
           <Route exact path="/" component={Home} />
