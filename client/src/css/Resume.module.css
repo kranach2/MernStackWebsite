@@ -75,17 +75,24 @@ text-align: center;
 :local(.technical),
 :local(.work),
 :local(.projects),
-:local(.professional),
+:local(.certification),
 :local(.education){
   display:grid;
-  grid-template-columns: 25% auto;
+  grid-template-columns: auto;
   justify-content: space-between;
  padding:10px; 
 }
 
-:local(.heading){
+:local(.heading)
+{
   padding:10px;
   font-size: 30px;
+}
+
+:local(.headingTwo){
+  padding:10px;
+  font-size: 22px;
+  color:white;
 }
 
 :local(.para),

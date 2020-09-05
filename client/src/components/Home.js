@@ -13,8 +13,8 @@ const secondHeading = useRef();
 
 useEffect(() => {
   // let tl = gsap.timeline();
-gsap.from(firstHeading.current, {duration: 3,ease:"expo.out", x: -1000 , scale: 1.2, skewX: 60, rotation: 280, color:"rgba(26, 188, 156,1.0)"})
-  gsap.from(secondHeading.current, {duration: 3, ease: "expo.out", x: window.innerWidth, scale: 1.2, skewX: 60, rotation: 280, color: "rgba(26, 188, 156,1.0)", delay:1})
+gsap.from(firstHeading.current, {duration: 3, ease:"expo.out", x: -1000 , scale: 1.2, skewX: 60, rotation: 360, color:"rgba(26, 188, 156,1.0)"})
+  gsap.from(secondHeading.current, {duration: 3, ease: "expo.out", x: window.innerWidth, scale: 1.2, skewX: 60, rotation: 360, color: "rgba(26, 188, 156,1.0)", delay:1})
   
 }, [firstHeading, secondHeading])
 
@@ -28,7 +28,7 @@ gsap.from(firstHeading.current, {duration: 3,ease:"expo.out", x: -1000 , scale: 
         <h1>Kishor Rana Chhetri</h1>
         </div>
         <div ref={secondHeading} className={styles.secondHeading}>
-        <h1>Full Stack Developer</h1>
+        <h3>Full Stack Developer/CompTIA A+ Certified Professional</h3>
         </div>
         <div>
 
