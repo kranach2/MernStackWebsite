@@ -139,7 +139,7 @@ const Resume = () => {
           </p>
           <p className={styles.para}>
             Messaging web app powered by React, Express, MongoDB and Socket.io (https://react-chatter-app.herokuapp.com/).
-	Source code is available in GitHub repository - (https://github.com/kranach2/MessagingWebApp.git)
+	Source code is available in GitHub repository - (https://github.com/kranach2/ReactMessagingApp.git)
           </p>
           </div>
         </div>
