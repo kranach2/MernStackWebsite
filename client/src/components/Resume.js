@@ -120,7 +120,7 @@ const Resume = () => {
           <h1 className={styles.heading}>Certifications</h1>
           <div className={styles.certificationDiv}>
           <p className={styles.firstPara}>
-          CompTIA IT Operation Specialist – CIOS      
+          CompTIA IT Operations Specialist – CIOS      
           </p>
           <p className={styles.firstPara}>
           CompTIA Network+                                                                         
