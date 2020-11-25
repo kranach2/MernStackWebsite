@@ -87,45 +87,17 @@ const Resume = () => {
         </div>
          
          
-           <h2 className={styles.headingTwo}>Tech Support / A+ </h2>
+           <h2 className={styles.headingTwo}>CompTIA IT Operations Specialist - CIOS (A+ and Network+ certified)</h2>
            <div className={styles.paraDiv}>
           <p className={styles.firstPara}>
-          	Hardware, software & network configuration and implementation.
+          	Mobile Devices | Networking | Hardware | Virtualization and Cloud Computing | Hardware and Network Troubleshooting.
           </p>
           <p className={styles.para}>
-          	Microsoft Operating System: Windows 7, Windows 8, Windows 10 and MacOS.
+        Operating Systems | Security | Software Troubleshooting | 
+        Operational Procedures
             </p>
           <p className={styles.para}>
-          	Microsoft Windows Server 2012 and 2016.
-          </p>
-          <p className={styles.para}>
-          	Hardware: Servers, Hubs, Routers, Switches, Printers, Scanners, Peripheral devices.
-          </p>
-          <p className={styles.para}>
-          Applications/Programs: Antivirus, Firewall, VMware, Office365, Active Directory (AD), Group Policy (GP), Hyper-V, SQL Database.
-          </p>
-          <p className={styles.para}>
-        	Networking: OSI Model, TCP/IP, DNS, DHCP, Remote Connectivity, LAN, WAN, VPN, Wireless and cellular network technologies.
-          </p>
-          <p className={styles.para}>
-          Mobile Platform: iOS & Android smart mobile devices. 
-          </p>
-          <p className={styles.para}>
-        	Security: Risk Assessment, Vulnerability Analysis and Preventive measures
-          </p>
-          <p className={styles.para}>
-          Technical troubleshooting of both hardware, software and network. 
-          </p>
-          <p className={styles.para}>
-          System security, backup, and recovery.
-          </p>
-
-          <p className={styles.para}>
-        	On-site & remote site support. 
-          </p>
-          <p className={styles.para}>
-          Virtualization and Operational Procedures</p>
-          
+          Networking Concepts | Infrastructure | Network Operations | Network Security | Network Troubleshooting and Tools</p>
          </div>
           
         </div>
@@ -148,7 +120,13 @@ const Resume = () => {
           <h1 className={styles.heading}>Certifications</h1>
           <div className={styles.certificationDiv}>
           <p className={styles.firstPara}>
-             CompTIA A+ Certified
+          CompTIA IT Operation Specialist – CIOS      
+          </p>
+          <p className={styles.firstPara}>
+          CompTIA Network+                                                                         
+          </p>
+          <p className={styles.firstPara}>
+          CompTIA A+ 
           </p>
         
           </div>

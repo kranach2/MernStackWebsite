@@ -28,7 +28,7 @@ gsap.from(firstHeading.current, {duration: 3, ease:"expo.out", x: -1000 , scale:
         <h1>Kishor Rana Chhetri</h1>
         </div>
         <div ref={secondHeading} className={styles.secondHeading}>
-        <h3>Full Stack Developer/CompTIA A+ Certified Professional</h3>
+        <h3>Full Stack Developer/CompTIA IT Operations Specialist</h3>
         </div>
         <div>
 
