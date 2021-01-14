@@ -87,7 +87,7 @@ const Resume = () => {
         </div>
          
          
-           <h2 className={styles.headingTwo}>CompTIA IT Operations Specialist - CIOS (A+ and Network+ certified)</h2>
+           <h2 className={styles.headingTwo}>CompTIA Secure Infrastructure Specialist - CSIS (A+ | Network+ | Security+)</h2>
            <div className={styles.paraDiv}>
           <p className={styles.firstPara}>
           	Mobile Devices | Networking | Hardware | Virtualization and Cloud Computing | Hardware and Network Troubleshooting.
@@ -98,6 +98,9 @@ const Resume = () => {
             </p>
           <p className={styles.para}>
           Networking Concepts | Infrastructure | Network Operations | Network Security | Network Troubleshooting and Tools</p>
+          <p className={styles.para}>
+        Threats, Attacks, Vulnerabilities | Security Technologies and Tools | Architecture and Design | Identity and Access Management | Risk Management | Cryptography and PKI
+            </p>
          </div>
           
         </div>
@@ -119,6 +122,12 @@ const Resume = () => {
         <div className={styles.certification}>
           <h1 className={styles.heading}>Certifications</h1>
           <div className={styles.certificationDiv}>
+          <p className={styles.firstPara}>
+          CompTIA Secure Infrastructure Specialist – CSIS      
+          </p>
+          <p className={styles.firstPara}>
+          CompTIA Security+     
+          </p>
           <p className={styles.firstPara}>
           CompTIA IT Operations Specialist – CIOS      
           </p>
