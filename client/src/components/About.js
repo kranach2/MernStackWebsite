@@ -18,17 +18,12 @@ const About = () => {
 <div className={styles.grid}>
       <div className={styles.facts}>
           <h1 className={styles.headingTwo}>
-            Some interesting facts about myself
+            Some facts about myself
           </h1>
           <p className={styles.para}>
-            I am originally from Kathmandu, capital of Nepal. To pursue higher
-            education, I came to Perth, WA in 2013. I have done Bahelor's of Information Technology from ECU followed by professional year program from National Institute of Technology. I
-            love watching movies and reading novels. 
-            Meditation in the weekend helps me kick start my day followed by
-            cycling. Playing video games with friends and learning new topics in
-            free time makes me feel good. I love helping people who are in need
-            which I think is the best traits of mine. My favourite visited place
-            is New York City.
+            I am Full stack developer who likes coding and problem solving. In addition, I have 
+            experience as an IT Support. I have done Bachelor's of Information Technology from ECU. 
+            Similarly, I am CompTIA A+, Network+ and Security+ certified professional.
           </p>
         </div>
 
